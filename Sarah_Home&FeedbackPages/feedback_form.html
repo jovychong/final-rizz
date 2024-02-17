@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Riztonia - FeedBack Page</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="feedbackformStyle.css">
+
+    <!-- Importing icons -->
+    <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+    <!-- Importing fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200&family=Poppins:wght@300&family=Varela&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="topnav">
+        <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+        <script src="../Nav&Footer/nav.js"></script>
+    
+        <div class="navigation">
+    
+            <!-- hidden nav menu -->
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+                    <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+                    <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+                    <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+                    <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+                    <li><a class="current-page" href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <!-- spanning across the whole nav - contains logo and book now button -->
+        <div class="nav-content">
+    
+            <!-- menu button -->
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+    
+            <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+                    alt=""></a>
+    
+            <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+    
+        </div>
+    
+    </nav>
+
+
+
+    <div class="main-section">
+        <header class="form-hero">
+            
+            <video autoplay loop muted plays-inline class="form-hero-background">
+                <source src="./media_home&feedback/form-hero.mp4" type="video/mp4">
+            </video>
+
+            <div class="form-hero-overlay"></div>
+            
+            <div class="form-banner">
+                <h2>CONTACT US</h2>
+                <hr>
+                <i class="fa-solid fa-chevron-down" onclick="scrollDown()"></i>
+            </div>
+
+        </header>
+        
+
+        <main class="form-content">
+
+            <div class="form-area">
+
+                <section class="feedback">
+
+                    <header>
+                        <h2>feedback</h2>
+                        <hr class="fb-line">
+                    </header>
+
+                    <form id="form" autocomplete="off">
+                        <div class="select-area">
+                            <label for="area">Area of feedback</label>
+                            <select id="area" required>
+                                <option value="" disabled selected hidden>
+                                    Please select
+                                </option>
+                                <option value="reservation">Reservations</option>
+                                <option value="wedding">Weddings</option>
+                                <option value="events">Events</option>
+                                <option value="dining">Dining</option>
+                                <option value="wellbeing">Wellbeing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="name-number-row">
+                            <div class="input-grp">
+                                <input type="text" id="name" name="name" placeholder=" " required>
+                                <label for="name"><i class="fa-solid fa-user"></i>&nbsp; Your Name</label>
+                            </div>
+
+                            <div class="input-grp">
+                                <!-- <input type="number" placeholder=" " required> -->
+                                <input type="tel" id="phone" name="phone" title="Enter Country Code (e.g. +65 12345678)" pattern="[+]{1}[1-9]{2}[ ]{1}[0-9]{8}" placeholder=" " required>
+                                <label for="phone"><i class="fa-solid fa-phone"></i>&nbsp; Phone No.</label>
+                            </div>
+                        </div>
+
+                        <div class="input-grp">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email"><i class="fa-solid fa-envelope"></i></i>&nbsp; Email</label>
+                        </div>
+                        
+                        <div class="input-grp">
+                            <textarea id="message" name="message" rows="8" placeholder=" " required></textarea>
+                            <label for="message"><i class="fa-regular fa-message"></i>&nbsp; Your Message</label>
+                        </div>
+
+                        <!-- trying to not refresh on submit -->
+                        <button type="submit">Submit&nbsp;<i class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+
+                </section>
+
+                <section class="contact-info">
+                    <!-- seperate content in order to add blur filter -->
+                    <div class="content">
+                        <h2>
+                            contact
+                            <br>
+                            information
+                        </h2>
+                        <hr class="ci-line">
+
+                        <p class="contact-text"> 
+
+                            497 Evergreen Rd. Beachville,<br>
+                            967836
+
+                            <br>
+                            <br>
+                            <br>
+
+                            Call Us:<br>
+                            +65 3456 7890
+
+                            <br>
+                            <br>
+                            <br>
+
+                            Email Us:<br>
+                            riztonia.luxury@gmail.com
+                            
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                            Office Hours:<br>
+                            Monday to Saturday<br>
+                            7.00 a.m - 9.00 p.m
+
+                        </p>
+
+                        <h2 class="follow-us">
+                            follow us
+                        </h2>
+                        <hr class="fo-line">
+                    
+                        <div class="follow-us-content">
+                            <div class="icon-grp">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a id="last" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+
+                            <div class="brand-grp">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="popup">
+                <img src="./media_home&feedback/tick.png" alt="">
+                <h2>Thank You!</h2>
+                <p>
+                    Your Details has been Succesfully Submitted.
+                    <br>
+                    Thank you for Your Feedback
+                </p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        
+        <footer id="footer">
+            <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+        
+            <!-- section 1 -->
+            <div class="footer-content">
+                <img src="../Nav&Footer/logo.png" alt="">
+        
+                <p>123 Address Road, Singapore 123456</p>
+        
+            </div>
+        
+            <!-- section 2 -->
+            <div class="footer-content">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+        
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        
+            <!-- section 3 -->
+            <div class="footer-content">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        
+            <!-- section 4 -->
+            <div class="footer-content">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Awards & Recognition</a></li>
+                    <li><a href="#">Virtual Tour</a></li>
+                </ul>
+            </div>
+        
+        </footer>
+
+    </div>
+
+</body>
+
+<script>
+
+    function scrollDown() {
+        window.scrollTo(0, 825);
+    }
+
+
+
+    // form handling
+
+    var form = document.querySelector('form')
+    var inputs = document.querySelectorAll('input')
+    var textInputs = document.querySelectorAll('textarea')
+    var selectInput = document.querySelector('area')
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault() // prevents user from submitting the default values
+
+        document.querySelector('.popup').classList.add('open')
+        
+
+
+        // Save form inputs into a json file:
+
+
+        //const fs = require('fs')
+
+        //const data = new FormData(event.target);
+        
+        //const formJSON = Object.fromEntries(data.entries());
+
+        //fs.writeFileSync('data.json', JSON.stringify(formJSON));
+
+        //fs.writeFile('data.json', JSON.stringify(formJSON, null, 2));
+
+
+    })
+
+    function closePopup() {
+        document.querySelector('.popup').classList.remove('open')
+        
+        // refreshes the page
+        Location.reload();
+    }
+
+
+</script>
+
+
+</html>

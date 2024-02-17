@@ -1,0 +1,87 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.tick-image {
+    height: 100px;
+}
+
+.confirmation-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.confirmation-number {
+    font-size: 36px;
+}
+
+.back-to-home {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.video-container {
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    left: 0;
+    filter: blur(2.147px);
+}
+
+.zoe {
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.815);
+    max-width: 650px;
+    /* min-width: 370px; */
+    font-family: Poppins;
+    font-size: 18px;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+#bbt {
+    margin-top: 10%;
+
+    color: blueviolet;
+}
+
+.back-to-home button {
+    margin-top: 7%;
+    border-color: #03273A;
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border-radius: 69px;
+    cursor: pointer;
+    transition: 0.175s ease;
+    font-weight: 400;
+}
+
+.back-to-home button:hover {
+    background-color: #03273A;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 69px;
+    transform: scale(1.1175);
+
+}

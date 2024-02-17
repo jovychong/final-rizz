@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hotel Riztonia Amenities</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gideon Roman|Poppins">
+<link rel="stylesheet" href="AmenitiesPage_CSS_Tia.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+
+<!--Importing icons-->
+<script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+<!--Importing fonts-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+</style>
+
+<style>
+  @media screen and (max-width: 576px) { 
+    /* media screen allows you change css for different screen sizes */
+  div.wordsInBox1,
+  div.wordsInBox2,
+  div.wordsInBox3,
+  div.wordsInBox4,
+  div.wordsInBox5 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  div.coverimg img {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  div.coverimg p{
+   margin:10px;
+  }
+
+  #HotelFacilitiesHeading {
+    margin-top: 30px;
+  }
+
+  #coverimg {
+    height: 300px;
+    margin-bottom:0px;
+  }
+
+  div.amenitiesbox1,
+  div.amenitiesbox2,
+  div.amenitiesbox3,
+  div.amenitiesbox4,
+  div.amenitiesbox5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* direction of the flex items in a flex container. column means it is vertically aliigned */
+    align-items: center;
+    padding:900px;
+  }
+
+  div.amenitiesbox1 img,
+  div.amenitiesbox2 img,
+  div.amenitiesbox3 img,
+  div.amenitiesbox4 img,
+  div.amenitiesbox5 img {
+    position: absolute;
+    /* does not affect other elements on the page, acts if other elements are not there */
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom:900px;
+    z-index:1;
+    display:none;
+
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 701px) {
+  div.wordsInBox1,
+  div.wordsInBox2,
+  div.wordsInBox3,
+  div.wordsInBox4,
+  div.wordsInBox5 {
+    margin-left: 300px;
+    margin-right: 40px;
+  }
+
+  div.wordsInBox1 p,
+  div.wordsInBox2 p,
+  div.wordsInBox3 p,
+  div.wordsInBox4 p,
+  div.wordsInBox5 p{
+    font-size:8px;
+  }
+  div.coverimg img {
+    height: 300px;
+    margin-bottom: 40px;
+  }
+
+  #HotelFacilitiesHeading {
+    margin-top: 40px;
+  }
+
+  #coverimg {
+    height: 400px;
+    margin:0px;
+    padding-left:0 ;
+    padding-right:0 ;
+  }
+
+  div.amenitiesbox1,
+  div.amenitiesbox2,
+  div.amenitiesbox3,
+  div.amenitiesbox4,
+  div.amenitiesbox5 {
+    width: 90%;
+    height: 300px;
+  }
+
+  div.amenitiesbox1 img,
+  div.amenitiesbox2 img,
+  div.amenitiesbox3 img,
+  div.amenitiesbox4 img,
+  div.amenitiesbox5 img {
+    height: 250px;
+    margin-top:30px;
+    margin-left:30px;
+  }
+}
+
+@media screen and (min-width:702px) and (max-width:1000px){
+  div.wordsInBox1,
+  div.wordsInBox2,
+  div.wordsInBox3,
+  div.wordsInBox4,
+  div.wordsInBox5 {
+    margin-left: 370px;
+    margin-right: 30px;
+  }
+
+  div.coverimg img {
+    height: 70%;
+    margin-bottom: 50px;
+  }
+
+  #HotelFacilitiesHeading {
+    margin-top: 70px;
+  }
+
+  #coverimg {
+    height: 500px;
+    margin-bottom: -200px;
+  }
+
+  div.amenitiesbox1,
+  div.amenitiesbox2,
+  div.amenitiesbox3,
+  div.amenitiesbox4,
+  div.amenitiesbox5,
+  div.amenitiesbox6,
+  div.amenitiesbox7 {
+    width: 90%;
+    height: 300px;
+  }
+
+  div.amenitiesbox1 img,
+  div.amenitiesbox2 img,
+  div.amenitiesbox3 img,
+  div.amenitiesbox4 img,
+  div.amenitiesbox5 img,
+  div.amenitiesbox6 img,
+  div.amenitiesbox7 img {
+    float: left;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    /* will scale according to your container */
+    margin: -10px;
+  }
+}
+    /* Additional styles for the slideshow */
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      /* height: 400px; */
+      height: 100vh;
+      margin-bottom: 50px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* any objects that extend beyond the margin will be hidden and no additional scroll is added (user cannot scroll to view it) */
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+
+    .slideshow-container .slideshow-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease;
+      /* slightly transparent, 1s transition, gradually ease into it */
+    }
+
+    .slideshow-container .slideshow-item.active {
+      opacity: 1;
+    }
+
+
+    /* fixing nav bar to fit page */
+    /* TODO */
+    
+    
+  </style>
+</head>
+<title>Amenities Riztonia Hotel</title>
+</head>
+<body class="amenitiespage">
+
+  <!-- NAV BAR -->
+  <nav class="topnav">
+    <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+    <script src="../Nav&Footer/nav.js"></script>
+  
+    <div class="navigation">
+  
+      <!-- hidden nav menu -->
+      <div class="nav-menu">
+        <ul>
+          <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+          <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+          <li><a class="current-page" href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+          <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+          <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+          <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+    <!-- spanning across the whole nav - contains logo and book now button -->
+    <div class="nav-content">
+  
+      <!-- menu button -->
+      <button class="hamburger" onclick="show()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </button>
+  
+      <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+          alt=""></a>
+  
+      <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn" style="margin-right: 0;">Book Now</a>
+  
+    </div>
+  
+  </nav>
+
+
+<div class="main-section">
+  <div class="amenitiespagecontainer">
+      <div class="amenitiespagecontainer">
+          <div class="slideshow-container">
+              <img src="Images(Amenities&FacilitiesReserv.)_Tia/coverimage4.jpg" alt="Slideshow Image 1" class="slideshow-item active">
+              <img src="Images(Amenities&FacilitiesReserv.)_Tia/spaCover.jpg" alt="Slideshow Image 2" class="slideshow-item">
+              <img src="Images(Amenities&FacilitiesReserv.)_Tia/coverimage5.jpg" alt="Slideshow Image 3" class="slideshow-item">
+          </div>
+
+      <div class = "coverimg" id = "coverimg">
+      <hr>
+      <div class="w3-row section-nav">
+        <div class="w3-col w3-container" style="width:3.5%"></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox1">GYM & FITNESS</a></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox2">POOL AREA</a></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox3">THE GAMES ROOM</a></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox4">RELAXATION AREA</a></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox5">SPA</a></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox6">BEACH CLUB</a></div>
+        <div class="w3-col w3-container" style="width:13%"><a href="#amenitiesbox7">CONCIERGE SERVICE</a></div>
+        <div class="w3-col w3-container" style="width:4.5%"></div>
+      </div>
+      <hr>
+      <h1 id ="HotelFacilitiesHeading">Hotel Facilities</h1>
+      <p>Full modern amenities and facilities are available to guests, and our ensemble of restaurants and bars will satisfy the most discerning taste buds. With a full and comprehensive range of activities lined up for guests, diverse interests and pursuits are matched with top quality facilities and services.</p>
+      </div>
+
+      <div class = "amenitiesbox1" id = "amenitiesbox1">
+          <img src ="Images(Amenities&FacilitiesReserv.)_Tia/gym updated.jpg" alt="">
+          <h2>Gym & Fitness</h2>
+          <div class="wordInBox1">
+          <p>Work up a sweat with state-of-the-art gym facilities and calming views at </br> Riztonia Fitness Club.</p>
+          <p>Make full use of the range of training equipment including treadmills, </br>stationary bikes and elliptical cross-trainers, as well as a Kinesis Technogym pulley wall and free weights, which are perfect for resistance training.</p>
+          <p>After an invigorating workout, unwind and soothe tired muscles at the hot pool, sauna and steam facilities in the changing rooms.  </p>
+          </div>
+      </div>
+
+      <div class ="amenitiesbox2" id = "amenitiesbox2">
+          <img src ="Images(Amenities&FacilitiesReserv.)_Tia/updated pool.jpg" alt="">
+          <h2>Pool Area</h2>
+          <div class="wordsInBox2">
+              <p>Visit our stunning pool area, the perfect place to wind down under </br> the beautiful open sky.Awaken your senses with a swim, cool down after a busy day, or spend a lazy afternoon sipping cocktails under the sun.</br></p>
+              <p>Set in an outdoor space, the Swimming Pool is a reflection of leisure and comfort. Our outdoor pool area provides a blissful locale for swimming, relaxing, and socializing.</p>
+          </div>
+      </div>
+
+      <div class ="amenitiesbox3" id = "amenitiesbox3">
+              <img src ="Images(Amenities&FacilitiesReserv.)_Tia/outdoor games room updated.jpg" alt="">
+              <h2>Games Room</h2>
+              <div class="wordsInBox3">
+                  <p>The perfect place to relax on the second floor of our Great House. Tucked in the palms and surrounded by stunning ocean views, this living area is the perfect </br> place for reading, playing a game or relaxing on the decks.</p>
+              </div>
+      </div>
+
+      <div class ="amenitiesbox4" id = "amenitiesbox4">
+              <img src = "Images(Amenities&FacilitiesReserv.)_Tia/relaxation area updated.jpg" alt="">
+              <h2>Relaxation Area</h2>
+              <div class="wordsInBox4">
+                  <p>If you're looking for someplace peaceful and quiet, the relaxtion area is the </br>place to go. The relaxation area is a tranquil oasis within our hotel, designed to provide our guests with a serene and rejuvenating experience.</p>
+              </div>
+      </div>
+
+      <div class ="amenitiesbox5" id = "amenitiesbox5">
+        <img src = "Images(Amenities&FacilitiesReserv.)_Tia/spa updated.jpg" alt="">
+        <h2>Spa</h2>
+        <div class="wordsInBox5">
+            <p> RizSpa offers unique spa treatments using only quality & exclusive spa products. Established since 1990s, RizSpa uses natural and organic products from various top of the range spa brands. We also offer authentic treatment experiences that are exclusive to Essence Vale.
+              Live the true spa experience at Essence Vale, through our holistic approach to wellbeing of life and results driven spa treatments.</p>
+        </div>
+      
+      </div>
+
+      <div class ="amenitiesbox6" id = "amenitiesbox6">
+        <img src = "Images(Amenities&FacilitiesReserv.)_Tia/yacht&beach club.jpg" alt="">
+        <h2>Yatch & Beach Club</h2>
+        <div class="wordsInBox5">
+            <p> Riztonia's Coastal Haven & Yacht Club is an exclusive sanctuary where luxury meets the sea. Sail away on meticulously designed private yachts, embracing boundless horizons. Relish beachfront cabanas, indulge in water sports, and savor exquisite dining. With every moment 
+              serenaded by gentle waves, our Coastal Haven & Yacht Club offers an unparalleled coastal escape of sheer indulgence and relaxation. Embrace opulence and the coastal breeze at Riztonia's premier destination for discerning travelers seeking the ultimate coastal experience.</p>
+        </div>
+      
+      </div>
+
+      <div class ="amenitiesbox7" id = "amenitiesbox7">
+        <img src = "Images(Amenities&FacilitiesReserv.)_Tia/concierge service.jpg" alt="">
+        <h2>Concierge Service</h2>
+        <div class="wordsInBox5">
+            <p> Experience Riztonia's Elite Concierge Service, where luxury meets convenience. Our expert concierges curate bespoke experiences, from exclusive yacht excursions to coveted dining reservations. Discover hidden gems and immerse in local culture through our insightful 
+              recommendations. Elevate your stay to opulence, where every whim is fulfilled, and cherished memories are crafted with care.</p>
+        </div>
+      
+      </div>
+
+  </div>
+  <div class="facilityBooking">
+      <h2 style="color: #fff;">Book a Facility</h2>
+      <p>Experience the luxury of our facilities. Book now!</p>
+      <a href="FacilitiesReservationPage_Tia.html" class="bookingButton" style="margin: 0;">Book Now</a>
+  </div>
+  <script>
+    // JavaScript code for slideshow
+    var slideIndex = 0;
+    carousel();
+    // function to create a slideshow
+  
+    function carousel() {
+      var i; 
+      // used as a loop counter in the for loop to iterate through the slides.
+      var slides = document.getElementsByClassName("slideshow-item");
+      // retrieves all the elements with the class "slideshow-item" and stores them in the slides variable
+  
+      for (i = 0; i < slides.length; i++) {
+        // for loop that starts with i set to 0 and iterates as long as i is less than the number of slides 
+        slides[i].style.opacity = "0";
+        // makes the slide tranparent
+      } 
+  
+      slideIndex++;
+      // *incremented. It is assumed that the slideIndex variable is declared and initialized somewhere outside this function to keep track of the current slide index.
+  
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      // when the loop reaches the end, it will go back to the first slide
+  
+      slides[slideIndex - 1].style.opacity = "1";
+      // makes current slide visible
+  
+      setTimeout(carousel, 6000); // Change slide every 6 seconds
+    }
+  </script>
+
+  <style>
+    footer {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+    }
+    .footer-content p {
+      text-align: left;
+    }
+    .footer-content img {
+      padding-left: 15%;
+    }
+    footer ul {
+      margin: 0;
+      padding: 0;
+    }
+    footer a {
+      margin: 0;
+    }
+
+  </style>
+
+  <footer id="footer">
+    <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+  
+    <!-- section 1 -->
+    <div class="footer-content">
+      <img src="../Nav&Footer/logo.png" alt="">
+  
+      <p style="font-size: 16px;">123 Address Road, Singapore 123456</p>
+  
+    </div>
+  
+    <!-- section 2 -->
+    <div class="footer-content">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+        <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+  
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  
+    <!-- section 3 -->
+    <div class="footer-content">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  
+    <!-- section 4 -->
+    <div class="footer-content">
+      <h4>About Us</h4>
+      <ul>
+        <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Awards & Recognition</a></li>
+        <li><a href="#">Virtual Tour</a></li>
+      </ul>
+    </div>
+  
+  </footer>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riztonia | Superior Suite Page</title>
+    <link href="roomStyle2.css" rel="stylesheet" type="text/css"/>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins&display=swap');</style>
+    <script src="https://kit.fontawesome.com/966c797ca6.js" crossorigin="anonymous"></script>
+
+    <!--Importing icons-->
+    <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+    <!--Importing fonts-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- NAV BAR -->
+<nav class="topnav">
+    <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+    <script src="../Nav&Footer/nav.js"></script>
+
+    <div class="navigation">
+
+        <!-- hidden nav menu -->
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+                <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+                <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+                <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+                <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- spanning across the whole nav - contains logo and book now button -->
+    <div class="nav-content" style="width: auto;">
+
+        <!-- menu button -->
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+
+        <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+                alt=""></a>
+
+        <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- REST OF THE PAGE -->
+<div class="main-section">
+    <!-- ROOM SECTION OF WEBPAGE -->
+    <div class="room column">
+        <img class="mainIMG" src="room-images/SS-private-ultra-luxury-villa-with-pool-greece-beachfront-deluxe-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island.jpg"/>
+        <div class="shade1"></div>
+        <div class="room-text">
+            <h1 id="Superior-Suite">Superior Suite</h1>         
+            <h3>An oasis to suit your needs</h3>
+            4<i class="fa-solid fa-user"></i> Suite
+            <p>With an airy indoor-outdoor Panamanian design, there's plenty of space to relax outdoors, from the breezy terrace to the private plunge pool, with soul-stirring views of the ocean.</p>
+        </div>
+        <div class="room-desc row">
+            <div class="desc-images">
+                <img src="room-images/SS1_methode_times_prod_web_bin_0fd7073e-a96d-11ed-9c9b-9439987f775c.jpg"/>
+            </div>
+            <div class="room-desc-text">
+                <p>This is indoor-outdoor living at its finest. Larger families and groups of friends can spread out and make the most of the space, with four separate casitas - each deeply inspired by Panama and filled with natural, tactile fabrics – connected by a broad terrace and set in tropical gardens, with a plunge pool looking right onto the sea.</p>
+            </div>
+        </div>
+
+        <div class="room-amenities row">
+            <div class="amenities column">
+                <h2>Room Amenities</h2>
+                <ul class="column">
+                    <li><i class="fa-solid fa-check"></i> King-sized bed</li>
+                    <li><i class="fa-solid fa-check"></i> Air-Conditioning</li>
+                    <li><i class="fa-solid fa-check"></i> Closet</li>
+                    <li><i class="fa-solid fa-check"></i> Safety deposit dox</li>
+                    <li><i class="fa-solid fa-check"></i> Minibar</li>
+                    <li><i class="fa-solid fa-check"></i> Flatscreen TVs</li>
+                    <li><i class="fa-solid fa-check"></i> Free high speed Wi-Fi Internet</li>
+                    <li><i class="fa-solid fa-check"></i> Shower and bathtub</li>
+                    <li><i class="fa-solid fa-check"></i> Slippers and dressing gown</li>
+                    <li><i class="fa-solid fa-check"></i> Hair dryer</li>
+                    <li><i class="fa-solid fa-check"></i> Bath amenities</li>
+                </ul> 
+            </div>
+            <div class="amenities-images">
+                <img src="room-images/SS2_private-ultra-luxury-villa-with-pool-greece-beachfront-deluxe-spa-villa-with-heated-pool-interior-design-porto-zante-villas-and-spa-zakynthos-island.jpg"/>
+            </div>
+        </div>
+
+
+
+        <!-- SLIDESHOW SECTION OF WEBPAGE(for current room's images) -->
+        <div class="slideshow">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="room-images/SS-private-ultra-luxury-villa-with-pool-greece-beachfront-deluxe-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="room-images/SS1_methode_times_prod_web_bin_0fd7073e-a96d-11ed-9c9b-9439987f775c.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="room-images/SS2_private-ultra-luxury-villa-with-pool-greece-beachfront-deluxe-spa-villa-with-heated-pool-interior-design-porto-zante-villas-and-spa-zakynthos-island.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="room-images/SS3_anantara_desaru_coast_deluxe_sea_view_corner_room_726x392_1.webp" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- REDIRECT USER TO BOOK FORM -->
+    <form>
+        <input class="bookbutton" type="button" onclick="form_call('Superior-Suite');" value="RESERVE" />
+    </form>
+
+
+
+    <!-- USER GOES TO SEE OTHER ROOMS -->
+    <h1 class="recommendation">You may be interested in...</h1>
+    <div class="rec-rooms">
+        <div class="scrolling-cards">
+            <div class="card">
+                <img src="room-images/BS-two-bedroom-private-ultra-luxury-villa-with-pool-greece-beachfront-presidential-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island2.jpg"/>
+                <h2>Beachfront Suite</h2>
+                <a>Discover More</a>
+            </div>
+            <div class="card">
+                <img src="room-images/DKR-two-bedroom-private-ultra-luxury-villa-with-pool-greece-royal-infinity-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island1.jpg"/>
+                <h2>Deluxe King Room</h2>
+                <a>Discover More</a>
+            </div>
+            <div class="card">
+                <img src="room-images/WD-private-ultra-luxury-villa-with-pool-greece-beachfront-one-royal-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island-2.jpg"/>
+                <h2>Waterfront Deluxe</h2>
+                <a>Discover More</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <style>
+        /* for intergration */
+        footer ul {
+            margin: 0;
+            padding: 0;
+        }
+        footer li {
+            text-align: left;
+        }
+    </style>
+    
+    <footer id="footer">
+        <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+    
+        <!-- section 1 -->
+        <div class="footer-content">
+            <img src="../Nav&Footer/logo.png" alt="">
+    
+            <p>123 Address Road, Singapore 123456</p>
+    
+        </div>
+    
+        <!-- section 2 -->
+        <div class="footer-content">
+            <h4>Contact Us</h4>
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+    
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+        <!-- section 3 -->
+        <div class="footer-content">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    
+        <!-- section 4 -->
+        <div class="footer-content">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Awards & Recognition</a></li>
+                <li><a href="#">Virtual Tour</a></li>
+            </ul>
+        </div>
+    
+    </footer>
+
+</div>
+
+<script>
+    // call the form page based on which room u reserve
+    function form_call(id_name) {
+        // this gets the name of the header / the name of the suite
+        var suite = document.getElementById(id_name).textContent;
+        
+        // this saves the name of the suite into ur local storage as a varaible called 'suite'
+        localStorage.setItem("suite", suite);
+
+        // this loads the form page
+        window.location.href='roomForm.html';
+    }
+
+
+    //temporary menu toggle
+    function menuToggle(x) {
+        x.classList.toggle("change");
+      }
+
+
+
+    // for slideshow
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById("radio" + counter).checked = true;
+      counter++;
+      if(counter>4){
+        counter = 1;
+      }
+    }, 5000);
+</script>
+</body>
+</html>

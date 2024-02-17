@@ -1,0 +1,371 @@
+* {
+    margin-right: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* AMENITIES PAGE */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-left:60px;
+    margin-right:25px;
+    margin-top:0px;
+    margin-bottom:0;
+    border-radius: 5px;
+    font-family: "Gideon Roman";
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight:bold;   
+}
+
+a:hover {
+    color:#6fbce2;
+}
+
+a:focus {
+    outline: none;
+}
+
+hr {
+    border-width:0.05px;
+}
+
+
+body.amenitiespage {
+    /* background-color: #05314A; */
+    
+    background: linear-gradient(180deg, #03273A 26.56%, rgba(3, 39, 58, 0.74) 70.31%, rgba(3, 39, 58,0.49) 100%);
+}
+.amenitiespagecontainer {
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+  }
+
+div.wordsInBox1 {
+    margin-left:500px;
+    margin-right:30px;
+    
+}
+
+div.wordsInBox2 {
+    margin-left:500px;
+    margin-right:30px;
+}
+
+div.wordsInBox3 {
+    margin-left:500px;
+    margin-right:30px;
+    
+}
+
+div.wordsInBox4 {
+    margin-left:500px;
+    margin-right:30px;
+}
+
+div.wordsInBox5 {
+    margin-left:500px;
+    margin-right:30px;
+    margin-top:-10px;
+}
+
+div.coverimg img {
+    width: 100%;
+    height: 70%;
+    object-fit:cover;
+    margin:0;
+    margin-bottom:50px;
+  
+}
+
+#HotelFacilitiesHeading {
+    margin-top:70px;
+}
+
+#coverimg {
+    width:100%;
+    height:500px;
+    padding:0px;
+    border:none;
+    margin:0px;
+    box-sizing: border-box;
+    color:#ffff;
+    margin-bottom:-200px;
+}
+
+div.coverimg p {
+    margin:200px;
+    margin-top:0px;
+}
+
+#amenitiesbox1 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+    border-radius:0px;
+    overflow:visible;
+}
+
+#amenitiesbox2 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+}
+
+.amenitiesbox2 h2 {
+    margin-top:50px;
+}
+
+#amenitiesbox3 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+}
+
+#amenitiesbox4 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+    padding-top:-50px;
+}
+
+#amenitiesbox5 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+    padding-top:-50px;
+}
+
+#amenitiesbox6 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+    padding-top:-50px;
+}
+
+#amenitiesbox7 {
+    width:90%;
+    height:300px;
+    background-color:#d6e4eb;
+    padding:0px;
+    border:none;
+    margin:30px;
+    box-sizing: border-box;
+    padding-top:-50px;
+}
+
+div.amenitiesbox5 h2 {
+    margin-top:70px ;
+}
+
+div.amenitiesbox1 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px); 
+    /* will calculate 100% plus 20px */
+    object-fit: cover;
+    margin:-10px;
+}
+
+ /* div.amenitiesbox2 img {
+    float: left;
+    width: 50%;
+    height: 100%;
+    object-fit: cover; */
+
+
+ div.amenitiesbox2 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    margin: -10px;
+} 
+
+div.amenitiesbox3 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    margin: -10px;
+}
+
+div.amenitiesbox4 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    margin: -10px;
+}
+
+div.amenitiesbox5 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    margin: -10px;
+}
+
+div.amenitiesbox6 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    margin: -10px;
+}
+
+div.amenitiesbox7 img {
+    float: left;
+    object-fit:cover;
+    border-radius:10px;
+    position: relative;
+    width: calc(50%);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    margin: -10px;
+}
+
+div.amenitiespagecontainer h1, h2 {
+    text-align: center;
+    font-family:"Gideon Roman";
+}
+
+div.amenitiespagecontainer p {
+    position: relative;
+    right: -2%;
+    text-align: center;
+    font-family:"Poppins";
+    font-size:12px;
+}
+
+div.amenitiesbox3 h2 {
+    margin-top:90px;
+}
+
+div.amenitiesbox4 h2 {
+    margin-top:90px;
+}
+
+div.amenitiesbox6 h2 {
+    margin-top:90px;
+}
+
+div.amenitiesbox7 h2 {
+    margin-top:90px;
+}
+
+.facilityBooking {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .facilityBooking h2 {
+    color: #05314A;
+    font-family: "Gideon Roman", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .facilityBooking p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .facilityBooking .bookingButton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #6fbce2;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-family: "Gideon Roman";
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .facilityBooking .bookingButton:hover {
+    background-color: #05314A;
+  }
+  
+  .facilityBooking .bookingButton:focus {
+    outline: none;
+  }
+
+
+
+  
+/* fixing stuff for intergration */
+.section-nav {
+    text-align: center;
+}
+
+.section-nav a {
+    margin: 0;
+}
+
+
+
+/* 
+
+div.amenitiesbox1 img:hover,
+div.amenitiesbox2 img:hover,
+div.amenitiesbox3 img:hover,
+div.amenitiesbox4 img:hover,
+div.amenitiesbox5 img:hover,
+div.amenitiesbox6 img:hover,
+div.amenitiesbox7 img:hover {
+    
+} */

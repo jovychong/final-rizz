@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hotel Riztonia Facilites Reservation</title>
+    <link rel="stylesheet" href="FacilitiesReservation_CSS_Tia.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader|Poppins">
+    <script src="formSubmission.js"></script>
+
+    <!--Importing icons-->
+    <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+    <!--Importing fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+    </style>
+
+    <style>
+        /* Additional styles for the slideshow */
+        .slideshow-container {
+            /* position: relative; */
+            width: 100%;
+            height: 100%;
+            margin-bottom: 50px;
+            margin: 0;
+            padding-top: 50%;
+            overflow: hidden;
+
+            /* to make it cover the background - for intergration */
+            position: fixed;
+            z-index: -1;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slideshow-container .slideshow-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .slideshow-container .slideshow-item.active {
+            opacity: 1;
+        }
+
+
+
+        /* fixing nav bar to fit page - for intergration */
+
+        .nav-content {
+            margin-left: -3.5%;
+        }
+
+        .topnav {
+            left: -0.1%;
+            top: -0.1%;
+        }
+    </style>
+</head>
+
+<body class="reserv">
+
+    <!-- NAV BAR -->
+    <nav class="topnav">
+        <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+        <script src="../Nav&Footer/nav.js"></script>
+
+        <div class="navigation">
+
+            <!-- hidden nav menu -->
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+                    <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+                    <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+                    <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+                    <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- spanning across the whole nav - contains logo and book now button -->
+        <div class="nav-content" style="width: auto;">
+
+            <!-- menu button -->
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+
+            <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+                    alt=""></a>
+
+            <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="main-section">
+        <div class="slideshow-container">
+            <img src="Images(Amenities&FacilitiesReserv.)_Tia/facilitiesReserv.cover.jpg" alt="Slideshow Image 1"
+                class="slideshow-item active">
+            <img src="Images(Amenities&FacilitiesReserv.)_Tia/outdoor games room updated.jpg" alt="Slideshow Image 2"
+                class="slideshow-item">
+            <img src="Images(Amenities&FacilitiesReserv.)_Tia/coverimage5.jpg" alt="Slideshow Image 3"
+                class="slideshow-item">
+        </div>
+
+        <div class="form-containerReserv">
+            <form class="reserv" action="../confirmation_page/bk_confirmation.html" method="get">
+                <table class="reserv">
+                    <tr>
+                        <td colspan="2">
+                            <h2 class="reserv">hotel facilites reservation form</h2>
+                            <hr class="reserv">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="facility" class="reserv">Facility:</label></td>
+                        <td>
+                            <select id="facility" name="facility" class="reserv">
+                                <option value="pool">Swimming Pool</option>
+                                <option value="gym">Gym</option>
+                                <option value="wonderroom">Wonder Room (Games Room)</option>
+                                <option value="hammock">Reserve a Hammock</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pax" class="pax" class="reserv">Number of pax:</label>
+                        <td><input type="number" id="pax" name="pax" placeholder="Pax No." required min="1" max="5"
+                                class="reserv"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="date" class="reserv">Reservation Date:</label></td>
+                        <td><input type="date" id="date" name="date" class="reserv"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="time-range" class="reserv">Time Range:</label></td>
+                        <td>
+                            <input type="time" id="start-time" name="start-time" required class="reserv" min="10:00"
+                                max="21:00">
+                            <span>-</span>
+                            <input type="time" id="end-time" name="end-time" required class="reserv" min="10:00"
+                                max="22:00">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="name" class="reserv">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required placeholder="Kate Wilson" class="reserv">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone" class="reserv">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" required placeholder="12345678" class="reserv">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="room" class="reserv">Room Number:</label><br></td>
+                        <td><input type="text" id="room" name="room" placeholder="#00-65" class="reserv"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label for="comments" class="reserv">Additional Comments:</label></td>
+                        <td><textarea id="comments" name="comments" rows="4" cols="30"
+                                placeholder="Enter any additional comments" class="reserv"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit" class="reserv submit-btn"
+                                onclick="go_form()" /></td>
+                    </tr>
+                </table>
+            </form>
+            <script>
+                // gets the current date
+                var currentDate = new Date();
+
+                // formats the current date as "YYYY-MM-DD" to set as the minimum value
+                var formattedDate = currentDate.toISOString().split("T")[0];
+
+                // sets the minimum value of the date input field to formatted date which is the current date
+                document.getElementById("date").min = formattedDate;
+
+                // add 2 days to the current date
+                var maxDate = new Date(currentDate.getTime() + (2 * 24 * 60 * 60 * 1000));
+
+                // format the maximum date as "YYYY-MM-DD" to set as the maximum value
+                var formattedMaxDate = maxDate.toISOString().split("T")[0];
+                //uses the ISOString() representation YYYY-MM-DDTHH:mm:ss:sssZ which includes separator T btw date and time parts
+                //0 means access the first part
+
+                // set the maximum value of the date input field
+                document.getElementById("date").max = formattedMaxDate;
+                //ensures that users cannot select a date earlier than the current date in the date input field.
+
+                // Get the phone number input element
+                var phoneNumberInput = document.getElementById("phone");
+
+                // Add event listener for changes in the phone number input - eventlistener listens for input
+                phoneNumberInput.addEventListener("input", function () {
+                    validatePhoneNumber();
+                });
+
+                // Function to validate the phone number
+                function validatePhoneNumber() {
+                    var phoneNumber = phoneNumberInput.value;
+                    //gets the value of the phone number
+
+                    // Define the regex pattern for the phone number format
+                    var pattern = /^[89]\d{7}$/;
+                    // /^: Denotes the start of the string.
+                    // [89]: Matches the first digit, which must be either "8" or "9".
+                    // \d{7}: Matches exactly seven digits (0-9).
+                    // $/: Denotes the end of the string.
+
+                    // Check if the phone number matches the pattern
+                    if (!pattern.test(phoneNumber)) {
+                        phoneNumberInput.setCustomValidity("Please enter a valid phone number (starts with 8 or 9, 8 digits long).");
+                    } else {
+                        phoneNumberInput.setCustomValidity("");
+                    }
+                }
+                // Get the room number input element
+                var roomNumberInput = document.getElementById("room");
+
+                // Add event listener for changes in the room number input
+                roomNumberInput.addEventListener("input", function () {
+                    validateRoomNumber();
+                });
+
+                // Function to validate the room number
+                function validateRoomNumber() {
+                    var roomNumber = roomNumberInput.value;
+
+                    // Define the regex pattern for the room number format
+                    var pattern = /^#\d{2}-\d{2}$/;
+
+                    // Check if the room number matches the pattern
+                    if (!pattern.test(roomNumber)) {
+                        roomNumberInput.setCustomValidity("Please enter a valid room number (e.g., #xx-xx).");
+                    } else {
+                        roomNumberInput.setCustomValidity("");
+                    }
+                }
+
+
+                // JavaScript code for slideshow
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var slides = document.getElementsByClassName("slideshow-item");
+
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.opacity = "0";
+                    }
+
+                    slideIndex++;
+
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+
+                    slides[slideIndex - 1].style.opacity = "1";
+
+                    setTimeout(carousel, 3000); // Change slide every 3 seconds
+                }
+
+
+            </script>
+        </div>
+
+
+        <style>
+            footer {
+                width: 100%;
+                text-align: left;
+            }
+
+            .footer-content p {
+                text-align: left;
+            }
+
+            footer ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            footer a {
+                margin: 0;
+            }
+        </style>
+
+        <footer id="footer" style="width: auto;">
+            <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+
+            <!-- section 1 -->
+            <div class="footer-content">
+                <img src="../Nav&Footer/logo.png" alt="">
+
+                <p>123 Address Road, Singapore 123456</p>
+
+            </div>
+
+            <!-- section 2 -->
+            <div class="footer-content">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- section 3 -->
+            <div class="footer-content">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- section 4 -->
+            <div class="footer-content">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Awards & Recognition</a></li>
+                    <li><a href="#">Virtual Tour</a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

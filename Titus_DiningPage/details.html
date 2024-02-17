@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Booking</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  </style>
+
+  <!--Importing icons-->
+  <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+  <!--Importing fonts-->
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="topnav" style="top: 0;">
+    <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+    <script src="../Nav&Footer/nav.js"></script>
+  
+    <div class="navigation">
+  
+      <!-- hidden nav menu -->
+      <div class="nav-menu">
+        <ul>
+          <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+          <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+          <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+          <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+          <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+          <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+    <!-- spanning across the whole nav - contains logo and book now button -->
+    <div class="nav-content" style="width: auto;">
+  
+      <!-- menu button -->
+      <button class="hamburger" onclick="show()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </button>
+  
+      <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+          alt=""></a>
+  
+      <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+  
+    </div>
+  
+  </nav>
+
+  <div class="main-section">
+    <section>
+      <div class="container3">
+        <center><div id="home2"></div></center>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+    
+      <!-- section 1 -->
+      <div class="footer-content">
+        <img src="../Nav&Footer/logo.png" alt="">
+    
+        <p>123 Address Road, Singapore 123456</p>
+    
+      </div>
+    
+      <!-- section 2 -->
+      <div class="footer-content">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+          <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+    
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    
+      <!-- section 3 -->
+      <div class="footer-content">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    
+      <!-- section 4 -->
+      <div class="footer-content">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Awards & Recognition</a></li>
+          <li><a href="#">Virtual Tour</a></li>
+        </ul>
+      </div>
+    
+    </footer>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("name");
+    const email = localStorage.getItem("email");
+    const date = localStorage.getItem("date");
+    const time = localStorage.getItem("time");
+    const guests = localStorage.getItem("guests");
+    const bookingDetailsElement = document.getElementById("home2");
+
+    bookingDetailsElement.innerHTML = `
+      <p>Your reservation details are:</p>
+      <p>Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Date: ${date}</p>
+      <p>Time: ${time}</p>
+      <p>Number of Guests: ${guests}</p>
+    `;
+  </script>
+</body>
+</html>
+
+
+
+
+
+

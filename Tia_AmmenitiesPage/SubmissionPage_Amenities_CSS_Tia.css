@@ -1,0 +1,60 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #05314A;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.main-section {
+  margin-top: 20%;
+}
+
+.containerPage {
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Gideon Roman", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+a.bookingPage {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #6fbce2;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: "Gideon Roman";
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+a.bookingPage:hover {
+  background-color: #05314A;
+}
+
+a.bookingPage:focus {
+  outline: none;
+}
+
+
+
+ul {
+  padding: 0;
+}

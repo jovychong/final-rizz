@@ -1,0 +1,318 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width:100%;
+    color:rgb(0, 0, 0);
+    font-family:'Gideon Roman', cursive;
+    background-color:white;
+}
+
+
+
+/*for links*/
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+a {color:white;}
+
+
+
+/* generic code */
+.row {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+.column {
+  display:flex;
+  flex-direction:column;
+}
+
+
+
+/* HEADER EVERYTHING */
+header {
+  padding:0;
+  margin:0;
+}
+
+
+
+/* FORM IMAGE */
+.guest-info {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  background-image: url("room-images/pexels-ben-mack-5708069.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 100vh;
+  padding:50px 0px 50px 0px;
+  /* 100 is like percentage in viewport height */
+}
+
+/*EVERYTHING IN FORM CSS STARTS HERE*/
+form {
+  display:flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  position:relative;
+  /* background-color:rgba(255, 255, 255, 0.669);   */
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.51);
+  /* background: rgba(135, 163, 195, 0.80); */
+  width:70%;
+  box-shadow: 0px 10px 100px 25px rgba(0, 0, 0, 0.25);
+}
+
+.constant {
+  letter-spacing: 0.5rem;
+}
+
+.steps {
+  text-align:center;
+  margin-top:10px; 
+  display:flex;
+  justify-content: space-evenly;
+}
+.step {
+  height: 30px;
+  width: 30px;
+  background-color: #7d74cd;
+  border: none;  
+  border-radius: 50%;
+  /* display: inline-block; */
+  opacity: 0.5;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.step.active {
+  opacity: 1;
+}
+/* Marks the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+.step-titles {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  letter-spacing: 0.1rem;
+}
+.step-titles h6 {
+  margin-top:5px;
+}
+
+/* form class, javascript */
+input.invalid {
+  background-color: #ffdddd !important;
+}
+
+form h2 {
+  margin:0;
+text-align: center;
+}
+form h3 {
+  margin:0;
+}
+form p {
+  text-align:center;
+  margin:0;
+}
+form hr {
+  width:100%;
+  height:1px;
+  background-color:#EFE197;
+  border:#EFE197;
+}
+
+.input-group {
+  display:flex;
+  flex-direction:column;
+  width:45%;
+}
+
+
+
+/* ROOM TAB 1 */
+.roomName {
+  border:1px black;
+  border-style: solid;
+  margin-bottom:25px;
+  text-align:center;
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* AVAILABILITY TAB 2 */
+.reserve-info {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    position:relative;
+    margin-bottom:15px;
+}
+.reserve {
+    width:50%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.reserve-info select {
+  width:40%;
+}
+
+.available {
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+.check-avail{
+  width:40%;
+  border: solid 1px black;
+  margin-bottom:10px;
+  padding:2px 0px 2px 0px;
+}
+.check-avail:hover{
+  background-color:rgba(128, 128, 128, 0.181);
+}
+.show-avail {
+  width:40%;
+  border: solid 1.5px green;
+  margin-bottom:20px;
+  padding:2px 0px 2px 0px;
+
+}
+
+
+
+/* GUEST TAB 3 */
+.contact-info {
+    margin-bottom:25px;
+}
+.input-prefix {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  align-items: center;
+}
+.rows {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-evenly;
+    margin-bottom:10px;
+}
+
+
+
+/* REQUESTS AND POLICIES TAB 5 */
+.input-text {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+.form-end {
+  margin-top:25px;
+}
+.form-end h4,p {
+  text-align:left;
+}
+
+
+
+/* PAYMENT TAB 6 */
+.payment-info {
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+}
+.ED-SC {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.payment-info .input-group {
+  width:100%;
+}
+
+
+
+/* FORM BUTTONS */
+.form-buttons {
+  /* overflow:auto; */
+  margin-top:20px;
+}
+.book-area {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+.bookbutton {
+  border-radius: 15px;
+  border-width: 1px;
+  padding:10px 20px 10px 20px;
+  background-color:#B5995F;
+  color:white;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.25);
+}
+.bookbutton:hover {
+  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* HIDE FORM TABS */
+.tab {
+  display:none;
+}
+
+
+
+/* FOOTER HERE */
+footer {
+  margin:0;
+  padding:0;
+}
+
+
+
+/* RESPONSIVE CODE */
+@media only screen and (max-width: 878px) {
+  /* For tablet size onwards(phone will be the same): */
+
+  .row {
+    flex-direction: column;
+  }
+  .step-titles{
+    font-size: 0.8em;
+    letter-spacing: 0.05rem;
+  }
+
+  .reserve-info {
+    flex-direction:column;
+  }
+  .reserve {
+    flex-direction:column;
+    width:100%;
+  }  
+  .rows {
+    flex-direction:column;
+  }
+  .reserve-info select {
+    width:100%;
+  }
+  .input-group {width:100%;}
+  .ED-SC {
+    flex-direction:column;
+  }
+}

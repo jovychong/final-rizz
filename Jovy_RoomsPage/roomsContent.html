@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riztonia | Stay Page</title>
+    <link href="roomStyle1.css" rel="stylesheet" type="text/css"/>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poppins&display=swap');</style>
+    <script src="https://kit.fontawesome.com/966c797ca6.js" crossorigin="anonymous"></script>
+
+    <!--Importing icons-->
+    <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+    <!--Importing fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+<nav class="topnav">
+    <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+    <script src="../Nav&Footer/nav.js"></script>
+
+    <div class="navigation">
+
+        <!-- hidden nav menu -->
+        <div class="nav-menu">
+            <ul style="font-family: 'Montserrat';">
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+                <li><a class="current-page" href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+                <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+                <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+                <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- spanning across the whole nav - contains logo and book now button -->
+    <div class="nav-content" style="width: auto;">
+
+        <!-- menu button -->
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+
+        <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+                alt=""></a>
+
+        <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+
+    </div>
+
+</nav>
+
+
+<!-- REST OF THE PAGE -->
+<div class="main-section">
+<!-- HEADER -->
+    <header>
+        <img class="bgImage" src="room-images/partial-oceanview-pool-pavilion-001-1 WIDE-MEDIUM-4-3.jpg">        
+    </header>
+
+
+
+    <!-- FANCY HOTEL DESCRIPTION SECTION -->
+    <div class="page-info">
+        <h1>Suites</h1>
+        <h2>at Europe's most private Beach Resort</h2>
+        <hr>
+    </div>
+
+    <div class="shade1"></div>
+    <div class="hotel-desc">
+        <p>At Riztonia Resort, we provide a collection of private beachfront luxury villas that offer unparalleled comfort and privacy coupled with exceptional personal services. Each villa is tucked away amidst lush gardens and features opulent interiors adorned with carefully selected pieces of Armani Casa & Gervasoni furniture, paintings by renowned Greek artists, and the finest exclusive amenities. Experience world-class luxury at Europe’s most private beach resort where everything is tailored to meet your needs.</p>
+    </div>
+    <div class="shade2"></div>
+
+
+
+    <!-- FILTERS -->
+    <div class="row" id="filters">
+        <div class="column filter">
+            <p>Search by Room name:</p>
+            <input type="text" id="searchInput" name="RoomNames" placeholder="Enter room name" onkeyup=searchFunction()>
+        </div>
+        <div class="column filter">
+            <p>Search by Budget:</p>
+            <div class="slidecontainer">
+                <input type="range" min="100" max="1000" value="1000" class="slider" step="100" id="priceRange" onchange=updateLabel()>
+                $
+                <span id="price">1000</span>
+            </div>
+        </div>
+        <div class="column filter">
+            <p>Search by pax per room:</p>
+            <input type="number"name="filterNum" min="1" id="pax" onchange=paxFilter()>
+        </div>
+    </div>
+
+
+
+    <!-- ROOMS START HERE -->
+    <div class="columns" id="Superior">
+        <div class="room">
+            <div class="room-img">
+                <img src="room-images/SS-private-ultra-luxury-villa-with-pool-greece-beachfront-deluxe-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island.jpg"/>
+            </div>
+            <div class="desc-text">
+                <h1 id='Superior-Suite'>Superior Suite</h1>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>    <p>Tucked between the trees overlooking the rippling waves of the bay is this peaceful hideaway, surrounded by lush, tropical gardens. Secluded and private, with three areas for languid lounging, and a plunge pool ideal for floating while staring out to sea. 
+                </p>
+                <div class="room-links row">
+                    <a class="btn-with-line" href="roomSepContent.html">
+                        Discover More
+                        <hr>
+                    </a>
+                    <form>
+                        <input class="bookbutton" type="button" onclick="form_call('Superior-Suite')" value="RESERVE" />
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="columns" id="Beachfront">
+        <div class="room">
+            <div class="desc-text">
+                <h1 id="Beachfront-Suite">Beachfront Suite</h1>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <p>Watch the sunrise and sunsets from the comfort of your own room, or go out to the beach for fun times with your suite's perk of easy access.</p>
+                <div class="room-links row">
+                    <a class="btn-with-line" href="roomSepContent.html">
+                        Discover More
+                        <hr>
+                    </a>
+                    <form>
+                        <input class="bookbutton" type="button" onclick="form_call('Beachfront-Suite')" value="RESERVE" />
+                    </form>
+                </div> 
+            </div>
+            <div class="room-img">
+                <img src="room-images/BS-two-bedroom-private-ultra-luxury-villa-with-pool-greece-beachfront-presidential-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island2.jpg"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns " id="Deluxe">
+        <div class="room">
+            <div class="room-img">
+                <img src="room-images/DKR-two-bedroom-private-ultra-luxury-villa-with-pool-greece-royal-infinity-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island1.jpg" alt="picture of room credit MiamiBeachNobuHotel"/>
+            </div>
+            <div class="desc-text">
+                <h1 id="Deluxe-Suite">Deluxe King Room</h1>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <p>Relax in the most comforting sheets in a space for only you. Privacy is of utmost importance here, with views of the unaccessible parts of the shore.</p>
+                <div class="room-links row">
+                    <a class="btn-with-line" href="roomSepContent.html">
+                        Discover More
+                        <hr>
+                    </a>
+                    <form>
+                        <input class="bookbutton" type="button" onclick="form_call('Deluxe-Suite')" value="RESERVE" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns" id="Waterfront">
+        <div class="room">
+            <div class="desc-text">
+                <h1 id="Waterfront-Suite">Waterfront Deluxe</h1>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <p>Specialised and private pools only accessible by these rooms, for people who favor the shade and quiet away from the shore.</p>
+                
+                <div class="room-links row">
+                    <a class="btn-with-line" href="roomSepContent.html">
+                        Discover More
+                        <hr>
+                    </a>
+                    <form>
+                        <input class="bookbutton" type="button" onclick="form_call('Waterfront-Suite')" value="RESERVE" />
+                    </form>
+                </div>
+            </div>
+            <div class="room-img">
+                <img src="room-images/WD-private-ultra-luxury-villa-with-pool-greece-beachfront-one-royal-spa-villa-with-heated-pool-porto-zante-villas-and-spa-zakynthos-island-2.jpg" alt="picture of room credit:"/>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BOTTOM FANCY HOTEL DESCRIPTION SECTION -->
+    <div class="shade3"></div>
+    <div class="page-end">
+        <div class="end-img">
+            <img src="room-images/honeymoon-romance4.jpg" alt="mountain side resort">
+        </div>
+        <div class="end-area">
+            <div class="end-text">
+                <h2>YOUR OWN PRIVATE HOTEL</h2>
+                <hr>
+                <p>Guests at Riztonia Resort in Greece, experience an exceptional level of personal service, away from the stress of large impersonal hotels. This top Mediterranean luxury resort offers absolute privacy, majestic scenery, exquisite dining and authentic Greek hospitality. These exclusive luxury villas in Greece are decorated and furnished with selected pieces of Armani Casa & Gervasoni, and paintings of prominent Greek artists.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <style>
+        /* for intergration */
+        footer {
+            text-align: left;
+        }
+        footer ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+
+    <footer id="footer">
+        <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+
+        <!-- section 1 -->
+        <div class="footer-content">
+            <img src="../Nav&Footer/logo.png" alt="">
+            
+            <p>123 Address Road, Singapore 123456</p>
+            
+        </div>
+
+        <!-- section 2 -->
+        <div class="footer-content">
+            <h4>Contact Us</h4>
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- section 3 -->
+        <div class="footer-content">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- section 4 -->
+        <div class="footer-content">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Awards & Recognition</a></li>
+                <li><a href="#">Virtual Tour</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    
+
+</div>
+
+
+<script>
+// call the form page based on which room u reserve
+function form_call(id_name) {
+    // this gets the name of the header / the name of the suite
+    var suite = document.getElementById(id_name).textContent;
+    
+    // this saves the name of the suite into ur local storage as a varaible called 'suite'
+    localStorage.setItem("suite", suite);
+
+    // this loads the form page
+    window.location.href='roomForm.html';
+}
+
+
+//for menu icon, can remove depending on new nav bar
+function menuToggle(x) {
+    x.classList.toggle("change");
+}
+
+
+
+//for filter search by name of room
+function searchFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    roomlist = document.getElementsByClassName("columns");
+    for (i = 0; i < roomlist.length; i++) {
+      title = roomlist[i].getElementsByTagName("h1")[0];
+
+      txtValue = title.textContent || title.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        roomlist[i].style.display = "";
+        } else {
+            roomlist[i].style.display = "none";
+          }
+        }
+}
+
+
+
+//for filter price range slider
+var slider = document.getElementById("priceRange");
+var output = document.getElementById("price");
+output.innerHTML = slider.value;
+
+slider.oninput = function updateLabel() {
+  output.innerHTML = this.value;
+  ul = document.getElementsByTagName("UL")
+
+
+  if(slider.value < 200){
+    document.getElementById("Superior").style.display = "none"
+    document.getElementById("Beachfront").style.display = "none"
+    document.getElementById("Deluxe").style.display = "none"
+    document.getElementById("Waterfront").style.display = ""
+  }else if(slider.value < 300){ 
+    document.getElementById("Superior").style.display = "none"
+    document.getElementById("Beachfront").style.display = "none"
+    document.getElementById("Deluxe").style.display = ""
+    document.getElementById("Waterfront").style.display = ""
+  }else if(slider.value < 400){ 
+    document.getElementById("Superior").style.display = "none"
+    document.getElementById("Beachfront").style.display = ""
+    document.getElementById("Deluxe").style.display = ""
+    document.getElementById("Waterfront").style.display = ""
+  }else if(slider.value < 800){ 
+    document.getElementById("Superior").style.display = "none"
+    document.getElementById("Beachfront").style.display = ""
+    document.getElementById("Deluxe").style.display = "" 
+    document.getElementById("Waterfront").style.display = ""
+  }else{
+    document.getElementById("Superior").style.display = ""
+    document.getElementById("Beachfront").style.display = ""
+    document.getElementById("Deluxe").style.display = "" 
+    document.getElementById("Waterfront").style.display = ""
+  }
+}
+
+
+
+//for filter by pax
+var paxInput = document.getElementById("pax");
+function paxFilter() {
+    if (paxInput.value == ""){
+        document.getElementById("Superior").style.display = ""
+        document.getElementById("Beachfront").style.display = ""
+        document.getElementById("Deluxe").style.display = "" 
+        document.getElementById("Waterfront").style.display = ""
+    }else if(paxInput.value < 3){
+        document.getElementById("Superior").style.display = "none"
+        document.getElementById("Beachfront").style.display = "none"
+        document.getElementById("Deluxe").style.display = "none"
+        document.getElementById("Waterfront").style.display = ""
+     }else if(paxInput.value < 5){ 
+        document.getElementById("Superior").style.display = "none"
+        document.getElementById("Beachfront").style.display = "none"
+        document.getElementById("Deluxe").style.display = ""
+        document.getElementById("Waterfront").style.display = ""
+     }else{
+        document.getElementById("Superior").style.display = ""
+        document.getElementById("Beachfront").style.display = ""
+        document.getElementById("Deluxe").style.display = "" 
+        document.getElementById("Waterfront").style.display = ""
+     }
+}
+</script>
+</body>
+</html>

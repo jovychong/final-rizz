@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Riztonia - Home Page</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="home_style.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Importing icons-->
+    <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+    <!--Importing fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+    </style>
+
+    <!-- scrolling effect -->
+    <script src="./scrollReveal.js"></script>
+    <link href="./scrollReveal.css" rel="css stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="topnav">
+        <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+        <script src="../Nav&Footer/nav.js"></script>
+
+        <div class="navigation">
+
+            <!-- hidden nav menu -->
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="current-page" href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+                    <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+                    <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+                    <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+                    <li><a href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- spanning across the whole nav - contains logo and book now button -->
+        <div class="nav-content">
+
+            <!-- menu button -->
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+
+            <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+                    alt=""></a>
+
+            <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="main-section">
+
+        <div class="main-section2">
+
+            <!-- Top Navigation Bar-->
+            <header class="hero">
+
+                <!-- HERO PICTURE -->
+                <img class="banner-pic" src="./media_home&feedback/hero.jpg" alt="">
+
+                <!-- Label Down -->
+                <div class="hero-label" onclick="scrollDown()">
+                    <p>STEP INTO LUXURY ⇂</p>
+                </div>
+
+            </header>
+
+            <!-- CONTENT AREA -->
+            <main class="main-area">
+
+                <div class="hero-to-main-gradient">
+                    <!-- Blue to Black Gradient (done in style sheet)-->
+                </div>
+
+                <!-- FEATURES GALLERY-->
+                <section class="feature-area">
+
+                    <section class="feature-content">
+                        <h1 class="reveal">
+                            LUXURY
+                            <br>
+                            REDEFINED
+                        </h1>
+
+                        <h2 class="reveal">
+                            experience more
+                            <br>
+                            with Riztonia.
+                        </h2>
+
+                        <p class="reveal">
+                            Indulge in unrivaled luxury at Riztonia's beachfront haven.
+                            Discover coastal elegance, where opulence and serenity intertwine.
+                            Unravel the art of redefined luxury, creating cherished memories beyond your stay.
+                        </p>
+
+                    </section>
+
+                    <section class="feature-label-and-gallery">
+
+                        <section class="feature-label reveal">
+
+                            <h1>FEATURED</h1>
+
+                            <hr>
+
+                            <a class="btn-1" href="#">EXPLORE MORE</a>
+
+                        </section>
+
+
+                        <section class="feature-gallery reveal">
+
+                            <div class="item main"><img src="media_home&feedback/feature1.jpg" alt=""></div>
+                            <div class="item"><img src="media_home&feedback/feature2.jpg" alt=""></div>
+                            <div class="item"><img src="media_home&feedback/feature3.jpg" alt=""></div>
+                            <div class="item"><img src="media_home&feedback/feature4.jpg" alt=""></div>
+                            <div class="item"><img src="media_home&feedback/feature5.jpg" alt=""></div>
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+
+                <section class="section-nav">
+
+                    <h2>GO TO SECTION:</h2>
+
+                    <ul class="reveal">
+                        <li><a href="#suites">Suites</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#Location">Location</a></li>
+                    </ul>
+
+                    <!-- https://stackoverflow.com/questions/53567706/how-do-i-include-short-vertical-lines-in-between-links-in-navbar -->
+                </section>
+
+
+                <section class="rounded-corner-transition">
+                    <div></div>
+                </section>
+
+
+                <!-- ROOMS GALLERY -->
+                <section class="rooms-area" id="suites">
+
+                    <h1 class="reveal">SUITES</h1>
+
+                    <section class="rooms-gallery reveal">
+                        <div class="room-btn" onmouseover='imgChange("media_home&feedback/room1.jpg")'>
+                            <h2>DELUXE KING ROOM</h2>
+                            <a class="btn-1" href="../Jovy_RoomsPage/roomsContent.html#Deluxe-Suite">VIEW MORE</a>
+                        </div>
+                        <div class="room-btn main show" onmouseover='imgChange("media_home&feedback/room2.jpg")'>
+                            <h2>BEACHFRONT SUITES</h2>
+                            <a class="btn-1" href="../Jovy_RoomsPage/roomsContent.html#Beachfront-Suite">VIEW MORE</a>
+                        </div>
+                        <div class="room-btn" onmouseover='imgChange("media_home&feedback/room3.jpg")'>
+                            <h2>WATERFRONT DELUXE</h2>
+                            <a class="btn-1" href="../Jovy_RoomsPage/roomsContent.html#Waterfront-Suite">VIEW MORE</a>
+                        </div>
+                    </section>
+
+                    <!-- REVIEWS SECTION-->
+                    <section class="reviews-area" id="testimonials">
+
+                        <div class="view-box">
+                            <div class="t-slide">
+                                <p>
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    Our stay at Riztonia was a seamless blend of elegance and relaxation.
+                                    The beachfront suite provided a stunning backdrop of the azure waters,
+                                    and the world-class amenities left nothing to be desired. From the moment
+                                    we arrived, the staff catered to our every need, making us feel like VIPs.
+                                    Riztonia truly redefines luxury beach hospitality, and we can't wait to return.
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </p>
+                                <h3>- Gilbert Chan & His Wife</h3>
+                            </div>
+
+                            <div class="t-slide">
+                                <p>
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    Riztonia exceeded all expectations for a luxury beach hotel.
+                                    The oceanfront suite offered breathtaking views, and the attention
+                                    to detail in the room's design was impeccable. The staff's warm and
+                                    personalized service made our stay truly special. A serene and indulgent
+                                    escape that we'll cherish forever.
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </p>
+                                <h3>- Bing Rui</h3>
+                            </div>
+
+                            <div class="t-slide">
+                                <p>
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    A captivating sanctuary of unparalleled elegance.
+                                    The suites offered in Riztonia presents awe-inspiring ocean views,
+                                    impeccable service, and a serene ambiance, ensuring an
+                                    unforgettable experience for those with discerning tastes
+                                    and a penchant for sophistication.
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </p>
+                                <h3>- Jun Song</h3>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+
+                <!-- https://stackoverflow.com/questions/5182170/how-to-let-an-html-image-overlap-another -->
+                <!-- <section class="dining-and-events">
+
+                    
+
+                    <div class="dining" id="dining">
+
+                        <div class="content">
+
+                            <div class="header reveal">
+                                <img src="media_home&feedback/dining_text.png" alt="">
+
+                            </div>
+
+                            <p class="reveal">
+                                Prepare to be captivated by the exquisite creations
+                                of our world-class chefs. With precision and ingenuity,
+                                they transform fresh and seasonal ingredients into dishes
+                                that reflect the essence of coastal elegance and modern flair.
+                            </p>
+
+                            <a class="btn-1 reveal" href="../Titus_DiningPage/homepage.html#menu">Make your dinner
+                                reservation →</a>
+
+                        </div>
+
+                        <div class="image reveal">
+                            <img src="media_home&feedback/dining.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="events" id="events">
+
+                        <div class="image reveal">
+                            <img src="media_home&feedback/events.png" alt="">
+                        </div>
+
+                        <div class="content">
+
+                            <h1 class="reveal">
+                                <span style="color:#fcfcfc">UN</span>PARALLELED
+                                <br>
+                                EVENTS
+                            </h1>
+
+                            <div class="body reveal">
+
+                                <p>
+                                    Step into a world of sophistication as you host
+                                    your event in our elegant venues. Whether it's a
+                                    dreamy beachfront wedding, a corporate conference,
+                                    or a special milestone celebration, our spaces are
+                                    designed to set the stage for unforgettable moments.
+                                </p>
+
+                                <a class="btn-1 reveal" href="../Gabrial_EventsPage/g_events.html#topwords">Plan your
+                                    event →</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section> -->
+
+
+                <section class="verybigthing" style="margin-top: 30%;">
+                    <div class="w3-row">
+                        <div class="w3-col m12 l6">
+                            <div class="content" id="dining-contenttt">
+
+                                <div class="header reveal">
+                                    <img style="width: 100%;" src="media_home&feedback/dining_text.png" alt="">
+
+                                </div>
+
+                                <p class="reveal">
+                                    Prepare to be captivated by the exquisite creations
+                                    of our world-class chefs. With precision and ingenuity,
+                                    they transform fresh and seasonal ingredients into dishes
+                                    that reflect the essence of coastal elegance and modern flair.
+                                </p>
+
+                                <a style="color: black;" class="btn-1 reveal"
+                                    href="../Titus_DiningPage/homepage.html#menu">Make your
+                                    dinner
+                                    reservation →</a>
+                            </div>
+                        </div>
+                        <div class="w3-col m12 l6">
+                            <div class="dining-imageee reveal" id="tcp">
+                                <img id="dininggg-img" style="width: 100%;" src="media_home&feedback/dining.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="w3-row" id="events-roww">
+                            <div class="w3-col m12 l6">
+                                <div class="image reveal">
+                                    <img id="events-picc" style="width: 100%" src="media_home&feedback/events.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="w3-col m12 l6">
+                                <div class="content" id="events-sectionnn">
+
+                                    <h1 class="reveal">
+                                        <div id="events-header"><span>UN</span>PARALLELED</div>
+                                        <div id="events-header2">EVENTS</div>
+                                    </h1>
+
+                                    <div class="body reveal" id="events-header2">
+
+                                        <p>
+                                            Step into a world of sophistication as you host
+                                            your event in our elegant venues. Whether it's a
+                                            dreamy beachfront wedding, a corporate conference,
+                                            or a special milestone celebration, our spaces are
+                                            designed to set the stage for unforgettable moments.
+                                        </p>
+
+                                        <a class="btn-1 reveal" style="color: black;"
+                                            href="../Gabrial_EventsPage/g_events.html#topwords">Plan
+                                            your
+                                            event →</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+        </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="amenities">
+
+            <h1 class="reveal">AMENITIES</h1>
+
+            <div class="amenities-gallery reveal" id="amenities">
+                <!-- https://www.youtube.com/watch?v=yfg9ChTmuKM -->
+
+                <ul>
+                    <li>
+
+                        <img src="media_home&feedback/amenities1.jpg" alt="">
+
+                        <div class="overlay">
+
+                            <div class="text">
+
+                                <h2>Spa & Wellness</h2>
+                                <p>
+                                    Discover true tranquility.
+                                    Let the world slip away as our expert therapists
+                                    pamper you with a selection of rejuvenating treatments.
+                                    Unwind, recharge, and embrace a sense of inner harmony
+                                    amidst an atmosphere of blissful relaxation.
+                                </p>
+
+                                <a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html#amenitiesbox4">view more
+                                    →</a>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <img src="media_home&feedback/amenities2.jpeg" alt="">
+
+                        <div class="overlay">
+
+                            <div class="text">
+
+                                <h2>Pool & Fitness</h2>
+                                <p>
+                                    Delight in our Pool & Fitness facilities,
+                                    where you can bask in the sun by our inviting
+                                    pool or embark on an invigorating workout in our
+                                    state-of-the-art fitness center. Immerse yourself
+                                    in a world of leisure and health, with every moment
+                                    dedicated to your well-being.
+                                </p>
+
+                                <a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html#amenitiesbox1">view more
+                                    →</a>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <img src="media_home&feedback/amenities3.jpeg" alt="">
+
+                        <div class="overlay">
+
+                            <div class="text">
+
+                                <h2>Yacht & Beach Club</h2>
+                                <p>
+                                    Embark on unforgettable coastal adventures
+                                    with access to our exclusive Yacht & Beach Club.
+                                    Sail into the horizon on private yacht excursions
+                                    or relish beachside bliss at our luxurious Beach Club.
+                                    Experience the allure of the ocean and revel in moments
+                                    of unparalleled coastal indulgence.
+                                </p>
+
+                                <a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html#amenitiesbox5">
+                                    view more→
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <img src="media_home&feedback/amenities4.jpg" alt="">
+
+                        <div class="overlay">
+
+                            <div class="text">
+
+                                <h2>Concierge Service</h2>
+                                <p>
+                                    Our dedicated Concierge Service is at your disposal
+                                    to curate personalized experiences, ensuring that
+                                    every aspect of your stay is catered to your desires.
+                                    From exclusive dining reservations to arranging local
+                                    excursions, allow us to tailor your journey and create
+                                    lasting memories.
+                                </p>
+
+                                <a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html#amenitiesbox6">
+                                    view more→
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+                </ul>
+
+
+                <div class="amenities-bg"></div>
+            </div>
+
+        </section>
+
+
+
+        <section class="about-us" id="about-us">
+
+            <div class="hovering-section reveal">
+
+                <div class="content">
+                    <h1>About Us</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Vivamus sem neque, cursus nec
+                        convallis ac, egestas in justo.
+                        Nullam mattis eros vel convallis
+                        laoreet. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Vivamus sem neque, cursus nec
+                        convallis ac, egestas in justo.
+                        Nullam mattis eros vel convallis
+                        laoreet.
+                    </p>
+                    <a class="btn-1">Learn More</a>
+                </div>
+
+                <img class="image" src="./media_home&feedback/aboutus.jpg" alt="">
+
+            </div>
+
+        </section>
+
+
+
+        <section class="Location-area" id="Location">
+
+            <div class="Location-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6239.896259874719!2d103.84185762167674!3d1.2466319855929031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1eb7afd08c05%3A0xfe4fd82a1f8187a2!2sThe%20Oceanfront%20%40%20Sentosa%20Cove!5e0!3m2!1sen!2ssg!4v1690533741638!5m2!1sen!2ssg"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+
+        <!-- section 1 -->
+        <div class="footer-content">
+            <img src="../Nav&Footer/logo.png" alt="">
+
+            <p>123 Address Road, Singapore 123456</p>
+
+        </div>
+
+        <!-- section 2 -->
+        <div class="footer-content">
+            <h4>Contact Us</h4>
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- section 3 -->
+        <div class="footer-content">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- section 4 -->
+        <div class="footer-content">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Awards & Recognition</a></li>
+                <li><a href="#">Virtual Tour</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    </div>
+
+
+</body>
+
+<!-- JavaScript -->
+<script>
+    // for lable btn on hero
+    function scrollDown() {
+        window.scrollTo(0, 850);
+    }
+
+
+
+
+    // function for all interactive galleries
+    function gallery_listener(allItems) {
+        allItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                // first remove .show and .main from All items
+                allItems.forEach(item => item.classList.remove('show', 'main'));
+
+                // then add .show to only the item that was hovered on
+                item.classList.add('show');
+            })
+        })
+    }
+
+    // Features Gallery Interactive
+    const feature_items = document.querySelectorAll('.item');
+    gallery_listener(feature_items);
+
+    // Room Gallery Interactive
+    const room_btns = document.querySelectorAll('.room-btn');
+    gallery_listener(room_btns);
+
+    // function to change image for room gallery
+    function imgChange(img_url) {
+        document.querySelector('.rooms-gallery').style.backgroundImage = "url(" + img_url + ")";
+    }
+
+
+
+
+</script>
+
+</html>

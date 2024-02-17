@@ -1,0 +1,233 @@
+/* styles.css */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* #bookNow button{
+    border-color:white;
+    border: 30px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    padding: 1% 3%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.175s ease;
+    font-weight: bold;
+  }
+  
+  #bookNow button:hover{
+    border-color: black;
+    background-color: white;
+    color: black;
+  } */
+
+.bookingButton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #6fbce2;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-family: "Gideon Roman";
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bookingButton:hover {
+    background-color: #05314A;
+}
+
+.bookingButton:focus {
+    outline: none;
+}
+
+
+
+
+
+section#home {
+    background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+    /* background-size: cover; */
+    background-position: center;
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding-bottom: 55.75%;
+
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#booking-form {
+    padding: 2% 5% 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 10%;
+    margin-bottom: 4%;
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+.container1 {
+    /* max-width: 100%; */
+    height: 100%;
+    padding: 5% 0;
+    margin: 0 auto;
+    color: #000;
+    background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+}
+
+.container2 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.container3 {
+    max-width: 100%;
+    margin: 0;
+    color: #000;
+    background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 21.5%;
+}
+
+#home2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    max-width: 400px;
+    padding: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #03273A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+/* for intergration */
+
+#menu {
+    width: auto;
+
+    padding: 3% 2% 10%;
+    background: linear-gradient(180deg, #03273A 26.56%, rgba(3, 39, 58, 0.74) 70.31%, rgba(3, 39, 58, 0.49) 100%);
+}
+
+.s-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s-row .left,
+.s-row .right {
+    flex: 50%;
+}
+
+.s-row img {
+    width: auto;
+    height: 500px;
+    border-radius: 30px;
+    margin: 0;
+}
+
+.s-row .left img {
+    float: left;
+}
+
+.s-row .right img {
+    float: right;
+}
+
+.s-row .text {
+    align-self: center;
+    color: #fff;
+}
+
+.s-row h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.s-row p {
+    font-size: 18px;
+}
+
+.reservation {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 1390px) {
+    #o1 {
+        order: 1;
+    }
+
+    #o2 {
+        order: 2;
+    }
+
+    #o3 {
+        order: 3;
+    }
+
+    #o4 {
+        order: 4;
+    }
+
+    #o5 {
+        order: 5;
+    }
+
+    #o6 {
+        order: 6;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .s-row img {
+        width: 90vw;
+        height: auto;
+    }
+}
