@@ -1,0 +1,397 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.event-image1 {
+    width: 100%;
+    min-height: 100vh;
+    flex-shrink: 0;
+    background: url('event-img-1.jpg') lightgray 50% / cover no-repeat;
+    background-position: center;
+    aspect-ratio: 1838/771;
+    flex-shrink: 0;
+}
+
+.container-size {
+    width: 40%;
+    height: 100%;
+}
+
+.bg {
+    background: linear-gradient(180deg, #03273A 26.56%, rgba(3, 39, 58, 0.74) 70.31%, rgba(3, 39, 58, 0.255) 100%);
+    background: rgb(3, 39, 58);
+    width: 100%;
+    z-index: -99;
+}
+
+
+#topwords h1 {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: 'Gideon Roman';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175px;
+    letter-spacing: 3px;
+    text-decoration-line: underline;
+}
+
+#topwords p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    margin-bottom: 6%;
+}
+
+
+.s-content {
+    margin-bottom: 10%;
+}
+
+/* Override UGG site styles */
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+.content-asset p {
+    margin: 0 auto;
+}
+
+
+.des-left {
+    background-color: #333333;
+    opacity: 0.8;
+    color: white;
+    letter-spacing: 3px;
+    padding: 1% 2%;
+    /* Adjust the padding to create some space around the text */
+    position: absolute;
+    top: 0;
+    /* Position the element at the bottom */
+    left: 0;
+    /* Align the element to the left */
+}
+
+.des-left h2 {
+    text-decoration: underline;
+    font-family: 'Gideon Roman';
+    font-size: 24px;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+.des-left p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-right: 12%;
+    margin-bottom: 7%;
+    opacity: 1;
+    font-weight: 400;
+}
+
+
+.des-right {
+    background-color: #333333;
+    opacity: 0.8;
+    color: white;
+    letter-spacing: 3px;
+    padding: 1% 2%;
+    /* Adjust the padding to create some space around the text */
+    position: absolute;
+    top: 0;
+    /* Position the element at the bottom */
+    right: 0;
+    /* Align the element to the left */
+
+}
+
+.des-right h2 {
+    text-decoration: underline;
+    font-family: 'Gideon Roman';
+    font-size: 24px;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+.des-right p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-right: 12%;
+    margin-bottom: 7%;
+    font-weight: 400;
+}
+
+
+#bookNow button {
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 69px;
+    cursor: pointer;
+    transition: 0.175s ease;
+    font-weight: 400;
+}
+
+#bookNow button:hover {
+    background-color: white;
+    color: black;
+    padding: 10px 40px;
+    border-radius: 69px;
+    transform: scale(1.1175);
+
+}
+
+/* Section - Parallax */
+/**************************/
+/* Styles for the parallax sections */
+.parallax-one,
+.parallax-two,
+.parallax-three,
+.parallax-four {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 8px;
+}
+
+/* Background images for each parallax section */
+.parallax-one {
+    background-image: url("wedding_pic.avif");
+}
+
+.parallax-two {
+    background-image: url("meeting-img.png");
+}
+
+.parallax-three {
+    background-image: url("demo-img.png");
+}
+
+.parallax-four {
+    background-image: url("drink-img.png");
+}
+
+/* CSS to style the video background */
+
+.wholeform {
+    margin-top: calc(100vh/5);
+    margin-left: 10%;
+    float: bottom;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+#bgVideo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#form-container {
+    background-color: #FFF;
+    max-width: 650px;
+    min-width: 370px;
+    font-family: Poppins;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+#generatebutton {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-color: rgba(3, 39, 58, 1);
+    padding: 5px 13px;
+    cursor: pointer;
+    transition: 0.175s ease;
+    color: rgba(3, 39, 58, 1);
+    background-color: rgba(3, 39, 58, 1);
+    background-color: #FFF;
+    opacity: 1;
+}
+
+#generatebutton:hover {
+    color: white;
+    transform: scale(1.175);
+    background-color: rgba(3, 39, 58, 1);
+    opacity: 1;
+
+}
+
+.bookinng-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    font-family: Noto Serif;
+    margin-right: 15%;
+    margin-top: 25%;
+}
+
+.bookinng-text h1 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.bookinng-text p {
+    font-size: 22px;
+}
+
+/* Booking Confirmation Popup Styles */
+.confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.confirmation-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media query to adjust popup size for smaller screens */
+@media screen and (max-width: 500px) {
+    .confirmation-content {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    .block {
+        padding: 40px;
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .block {
+        padding: 30px;
+        width: 420px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .parallax-one,
+    .parallax-two,
+    .parallax-three {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container-size {
+        width: 100%;
+        padding: 2% 5%;
+        /* Adjust the padding for better readability on mobile devices */
+        text-align: center;
+    }
+
+    .container-size h2 {
+        font-size: 24px;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+
+    .container-size p {
+        font-size: 16px;
+        margin-right: 0%;
+    }
+
+    .bookinng-text {
+        margin-left: 0;
+        align-items: center;
+        width: 100vw;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .bookinng-text h1 {
+        font-size: 20px;
+    }
+
+    .bookinng-text p {
+        font-size: 18px;
+
+    }
+
+    .wholeform {
+        margin: auto;
+        margin-top: 20%;
+        width: 100vw;
+        order: 2;
+    }
+
+}

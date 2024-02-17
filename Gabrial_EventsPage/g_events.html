@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="g_events_style.css">
+
+    <!--Importing icons-->
+    <script src="https://kit.fontawesome.com/d668823cf8.js" crossorigin="anonymous"></script>
+
+    <!--Importing fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gideon+Roman&family=Montserrat:wght@500&family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Poppins:wght@300;600&family=Varela&display=swap&family=Vollkorn&display=swap&family=Quattrocento+Sans:wght@700&family=Noto+Serif:wght@300;400');
+    </style>
+
+</head>
+
+<body class="bg">
+
+    <!-- NAV BAR -->
+    <nav class="topnav">
+        <link href="../Nav&Footer/navbar.css" rel="css stylesheet">
+        <script src="../Nav&Footer/nav.js"></script>
+
+        <div class="navigation">
+
+            <!-- hidden nav menu -->
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../Sarah_Home&FeedbackPages/home_page.html">Home</a></li>
+                    <li><a href="../Jovy_RoomsPage/roomsContent.html">Stay</a></li>
+                    <li><a href="../Tia_AmmenitiesPage/AmentitiesPage_Tia.html">Amenities</a></li>
+                    <li><a href="../Titus_DiningPage/homepage.html">Dining</a></li>
+                    <li><a class="current-page" href="../Gabrial_EventsPage/g_events.html">Events</a></li>
+                    <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- spanning across the whole nav - contains logo and book now button -->
+        <div class="nav-content" style="width: auto;">
+
+            <!-- menu button -->
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+
+            <a href="../Sarah_Home&FeedbackPages/home_page.html" class="hotel-logo"><img src="../Nav&Footer/logo.png"
+                    alt=""></a>
+
+            <a href="../Jovy_RoomsPage/roomsContent.html" class="booknow-btn">Book Now</a>
+
+        </div>
+
+    </nav>
+
+    <div class="main-section">
+        <div>
+            <section>
+                <div class="event-image1">
+                </div>
+                <div id="topwords">
+                    <h1>Events</h1>
+                    <p>Discover a paradise retreat at our exquisite resort hotel. Nestled in stunning surroundings, we
+                        offer a range of luxurious amenities and unrivaled hospitality. Experience world-class dining,
+                        rejuvenating spa treatments, and thrilling adventure activities. Whether you're seeking
+                        relaxation or adventure, our resort is the perfect destination. Book now for an unforgettable
+                        escape filled with luxury, serenity, and unforgettable memories.</p>
+                    <center>
+                        <hr style="width: 4%; margin-bottom: 3%;">
+                    </center>
+                </div>
+                <section>
+                    <div class="parallax-one">
+                        <div class="w3-row">
+                            <div class="w3-col w3-container des-left container-size">
+                                <h2>WEDDINGS</h2>
+                                <p>Experience an enchanting wedding at our luxurious hotel beach, where the sparkling
+                                    waters and soft sands create a captivating backdrop for your special day. Our
+                                    dedicated team ensures a seamless and personalized event, from exquisite decor to
+                                    delectable cuisine, making it an unforgettable celebration of love.</p>
+                                <br>
+                                <a href="event_forms.html" id="bookNow"><button onclick="form_call('Weddings')">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="parallax-two ">
+                        <div class="w3-row">
+                            <div class="w3-col w3-container des-right container-size">
+                                <h2>MEETINGS</h2>
+                                <p>Discover seamless corporate gatherings and inspiring events at our luxury beach
+                                    hotel's Meetings page. With elegant spaces, state-of-the-art facilities, and
+                                    personalized services, we curate unparalleled experiences for your business needs.
+                                    Combine work and leisure effortlessly amidst breathtaking ocean views, world-class
+                                    dining, and rejuvenating spa treatments.</p>
+                                <br>
+                                <a href="event_forms.html" id="bookNow"><button onclick="form_call('Meetings')">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="parallax-three">
+                        <div class="w3-row">
+                            <div class="w3-col w3-container des-left container-size">
+                                <h2>Savor & Explore</h2>
+                                <p>Embark on a culinary adventure at our resort's signature event, 'Savor & Explore: A
+                                    Culinary Journey.' Experience gourmet delights, interactive cooking demos, and
+                                    exquisite wine pairings. Join us for an unforgettable celebration of flavors and
+                                    creativity. Reserve your seat now.</p>
+                                <br>
+                                <a href="event_forms.html" id="bookNow"><button onclick="form_call('Savor & Explore')">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="parallax-four">
+                        <div class="w3-row">
+                            <div class="w3-col w3-container des-right container-size">
+                                <h2>Vino Elegante: A Journey Through Exquisite Wines</h2>
+                                <p>Indulge in the finest wines from around the world at our exclusive wine tasting
+                                    event. "Vino Elegante" offers a curated selection of vintages, expertly paired with
+                                    gourmet delights. Join us for a sophisticated evening of refinement and vinicultural
+                                    excellence. Cheers to a memorable experience!</p>
+                                <br>
+                                <a href="event_forms.html" id="bookNow"><button onclick="form_call('Vino Elegante: A Journey Through Exquisite Wines')">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div>
+                </div>
+
+                <footer id="footer">
+                    <link href="../Nav&Footer/footer.css" rel="css stylesheet">
+
+                    <!-- section 1 -->
+                    <div class="footer-content">
+                        <img src="../Nav&Footer/logo.png" alt="">
+
+                        <p>123 Address Road, Singapore 123456</p>
+
+                    </div>
+
+                    <!-- section 2 -->
+                    <div class="footer-content">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="../Sarah_Home&FeedbackPages/feedback_form.html">Contact Us</a></li>
+                            <li><a href="../Sarah_Home&FeedbackPages/home_page.html#Location">Location</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+
+                        <div class="icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- section 3 -->
+                    <div class="footer-content">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="../Sarah_Home&FeedbackPages/home_page.html#testimonials">Testimonials</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- section 4 -->
+                    <div class="footer-content">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="../Sarah_Home&FeedbackPages/home_page.html#about-us">About Us</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Awards & Recognition</a></li>
+                            <li><a href="#">Virtual Tour</a></li>
+                        </ul>
+                    </div>
+
+                </footer>
+
+        </div>
+
+
+</body>
+
+<script>
+    // call the form page based on which room u reserve
+    function form_call(selectOption_value) {
+        // this saves the name of the suite into ur local storage as a varaible called 'suite'
+        localStorage.setItem("event", selectOption_value);
+
+        // this loads the form page
+        window.location.href='event_forms.html';
+    }
+
+
+</script>
+
+</html>
